@@ -122,7 +122,7 @@ public class GetListUsersTest extends BaseTest {
                 .when()
                 .get("/unknown/2")
                 .then()
-                .statusCode(205) // Expecting 200 OK
+                .statusCode(200) // Expecting 200 OK
                 .extract()
                 .response();
 
